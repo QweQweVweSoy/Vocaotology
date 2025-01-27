@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="root" prefHeight="691.0" prefWidth="886.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vocaotology.ui.Info">
+    
+    <BorderPane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <!-- Top region -->
+        <top>
+            <Pane fx:id="topPane" style="-fx-background-color: lightgray;" styleClass="pane" />
+        </top>
+        
+        <!-- Right region -->
+        <right>
+            <Pane fx:id="rightPane" style="-fx-background-color: lightblue;" styleClass="pane" />
+        </right>
+        
+        <!-- Left region -->
+        <left>
+            <Pane fx:id="leftPane" style="-fx-background-color: lightcoral;" styleClass="pane" />
+        </left>
+        
+        <!-- Center region wrapped in a StackPane -->
+        <center>
+            <AnchorPane>
+                <Pane fx:id="purplePane" layoutX="408.0" layoutY="87.0" prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: purple;" AnchorPane.rightAnchor="25.0" />
+                <Pane fx:id="orangePane" layoutX="408.0" layoutY="98.0" prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: orange;" AnchorPane.rightAnchor="25.0" />
+                <Pane fx:id="redPane" layoutX="408.0" layoutY="108.0" prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: red;" AnchorPane.rightAnchor="25.0" />
+                <Pane fx:id="yellowPane" layoutX="408.0" layoutY="122.0" prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: yellow;" AnchorPane.rightAnchor="25.0" />
+                <Pane fx:id="bluePane" layoutX="408.0" layoutY="136.0" prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: blue;" AnchorPane.rightAnchor="25.0" />
+                <Pane fx:id="greenPane" layoutX="408.0" layoutY="147.0" prefHeight="250.0" prefWidth="200.0" style="-fx-background-color: green;" AnchorPane.rightAnchor="25.0" />
+            <padding>
+               <Insets bottom="25.0" right="25.0" />
+            </padding>
+            </AnchorPane>
+        </center>
+      <bottom>
+         <HBox alignment="CENTER" spacing="180.0" style="-fx-background-color: lightgreen;" BorderPane.alignment="CENTER">
+            <children>
+               <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Next" onAction="#handleNext" />
+               <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="Previous" onAction="#handlePrevious">
+                  <HBox.margin>
+                     <Insets />
+                  </HBox.margin>
+               </Button>
+            </children>
+            <padding>
+               <Insets bottom="50.0" top="20.0" />
+            </padding>
+         </HBox>
+      </bottom>
+    </BorderPane>
+
+</AnchorPane>
