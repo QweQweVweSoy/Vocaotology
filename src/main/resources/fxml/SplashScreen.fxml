@@ -3,23 +3,25 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="rootPane" styleClass="root" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vocaotology.ui.SplashScreen">
-    
-    <VBox alignment="BOTTOM_LEFT" spacing="5.0" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20">
-        <Label fx:id="titleLabel" styleClass="title-label" text="Vocaotology" />
-        <Label fx:id="versionLabel" styleClass="info-label" text="Version: 1.0" />
-        <Label fx:id="companyLabel" styleClass="info-label" text="Company Name" />
-        <VBox spacing="2">
-            <Label fx:id="percentageLabel" styleClass="percentage-label" />
-            <Label fx:id="statusLabel" styleClass="info-label">
-            <VBox.margin>
-               <Insets />
-            </VBox.margin>
-         </Label>
-            <ProgressBar fx:id="progressBar" prefWidth="300" progress="0" styleClass="highlighter-progress-bar" />
-        </VBox>
-    </VBox>
-</AnchorPane>
+<VBox alignment="BOTTOM_LEFT" maxHeight="1080.0" maxWidth="1920.0" minHeight="400.0" minWidth="600.0" prefHeight="720.0" prefWidth="1280.0" spacing="15.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.vocaotology.ui.scenes.main.SplashScreenController">
+   <Label fx:id="statusLabel1" prefHeight="35.0" prefWidth="198.0" text="Vocaotology 1.0.0">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Label>
+    <ImageView fx:id="imageView" fitWidth="300" preserveRatio="true">
+        <image>
+            <Image url="@../assets/images/splash.png" />
+        </image>
+    </ImageView>
+    <ProgressBar fx:id="progressBar" prefHeight="26.0" prefWidth="397.0" />
+    <Label fx:id="statusLabel" prefHeight="27.0" prefWidth="165.0" text="Loading..." />
+   <padding>
+      <Insets bottom="50.0" left="50.0" />
+   </padding>
+</VBox>

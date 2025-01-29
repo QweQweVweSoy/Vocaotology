@@ -1,5 +1,4 @@
 package com.vocaotology.config;
-
 public final class AppConfig {
     // Application metadata
     public static final String APP_NAME = "Vocaotology";
@@ -33,7 +32,7 @@ public final class AppConfig {
     public static final int BUFFER_SIZE = 4096;
     
     // CSS and styling
-    public static final String STYLE_SHEET = "/styles/application.css";
+    public static final String STYLE_SHEET = "/styles/style.css";
     public static final String DEFAULT_FONT = "ToThePoint.ttf";
     
     private AppConfig() {

@@ -1,5 +1,4 @@
 package com.vocaotology.config;
-
 public final class GameConfig {
     // Scoring configuration
     public static final int BASE_WORD_SCORE = 10;

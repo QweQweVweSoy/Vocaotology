@@ -1,5 +1,4 @@
 package com.vocaotology.core;
-
 public enum GameState {
     LOADING("Loading game resources..."),
     MAIN_MENU("Main Menu"),
